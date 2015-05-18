@@ -28,8 +28,8 @@ $orbit-timer-bg: rgba(255,255,255,0.3) !default;
 $orbit-timer-show-progress-bar: true !default;
 
 // We use these to control the bullet nav styles
-$orbit-bullet-nav-color: $iron !default;
-$orbit-bullet-nav-color-active: $aluminum !default;
+$orbit-bullet-nav-color: $secondary-color !default;
+$orbit-bullet-nav-color-active: $primary-color !default;
 $orbit-bullet-radius: rem-calc(9) !default;
 
 // We use these to controls the style of slide numbers
