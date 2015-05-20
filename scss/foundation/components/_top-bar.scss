@@ -13,7 +13,7 @@
 $include-html-top-bar-classes: $include-html-classes !default;
 
 // Background color for the top bar
-$topbar-bg-color: $oil !default;
+$topbar-bg-color: $primary-color !default;
 $topbar-bg: $topbar-bg-color !default;
 
 // Height and margin
@@ -33,8 +33,8 @@ $topbar-link-weight: $font-weight-normal !default;
 $topbar-link-font-size: rem-calc(13) !default;
 $topbar-link-hover-lightness: -10% !default; // Darken by 10%
 $topbar-link-bg: $topbar-bg !default;
-$topbar-link-bg-hover: $jet !default;
-$topbar-link-bg-color-hover: $charcoal !default;
+$topbar-link-bg-hover: scale-color($primary-color, $lightness: -14%) !default;
+$topbar-link-bg-color-hover: scale-color($primary-color, $lightness: -20%) !default;
 $topbar-link-bg-active: $primary-color !default;
 $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%) !default;
 $topbar-link-font-family: $body-font-family !default;
@@ -46,11 +46,11 @@ $topbar-button-font-size: .75rem !default;
 $topbar-button-top: 7px !default;
 
 // Style the top bar dropdown elements
-$topbar-dropdown-bg: $oil !default;
+$topbar-dropdown-bg: scale-color($primary-color, $lightness: -14%) !default;
 $topbar-dropdown-link-color: $white !default;
 $topbar-dropdown-link-color-hover: $topbar-link-color-hover !default;
-$topbar-dropdown-link-bg: $oil !default;
-$topbar-dropdown-link-bg-hover: $jet !default;
+$topbar-dropdown-link-bg: scale-color($primary-color, $lightness: -14%) !default;
+$topbar-dropdown-link-bg-hover: scale-color($primary-color, $lightness: -20%) !default;
 $topbar-dropdown-link-weight: $font-weight-normal !default;
 $topbar-dropdown-toggle-size: 5px !default;
 $topbar-dropdown-toggle-color: $white !default;
@@ -68,8 +68,9 @@ $topbar-menu-link-font-size: rem-calc(13) !default;
 $topbar-menu-link-weight: $font-weight-bold !default;
 $topbar-menu-link-color: $white !default;
 $topbar-menu-icon-color: $white !default;
-$topbar-menu-link-color-toggled: $jumbo !default;
-$topbar-menu-icon-color-toggled: $jumbo !default;
+$topbar-menu-link-color-toggled: $iron !default;
+$topbar-menu-icon-color-toggled: $iron !default;
+
 $topbar-menu-icon-position: $opposite-direction !default; // Change to $default-float for a left menu icon
 
 // Transitions and breakpoint styles
