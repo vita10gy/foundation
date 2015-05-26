@@ -1,11 +1,10 @@
 
-#breadcrumbs-greeting .columns {
-	font-size: 14px;
+#breadcrumbs-greeting .welcome-statement {
+	font-size: $crumb-font-size;
 	font-weight: normal;
-	color: #666;
-	min-height: 1.25rem;
-	padding-top: 4px;
-	line-height: 1.25rem;
+	color: $crumb-font-color-current;
+	padding:$crumb-padding;
+  line-height: $crumb-font-size;
 }
 
 #breadcrumbs-greeting .columns {
