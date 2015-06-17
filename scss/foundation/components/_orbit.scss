@@ -311,13 +311,12 @@ $orbit-timer-hide-for-small: true !default;
     .orbit-bullets {
       position: absolute;
       right: 10px;
-      display: block;
-      float: none;
       margin: 0 auto 30px auto;
       overflow: hidden;
-      position: relative;
-      text-align: center;
       top: 10px;
+      float: none;
+      text-align: center;
+      display: block;
 
       li {
         background: $orbit-bullet-nav-color;
