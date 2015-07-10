@@ -33,6 +33,7 @@
 #cart_wrapper table td select{
   width:auto;
   margin-bottom: 5px;
+  padding-right:20px;
 }
 
 
@@ -40,12 +41,12 @@
   font-weight: bold;
 }
 #cart_wrapper table td .description{
-  font-size:.8em;
+  font-size:rem-calc(13);
   font-weight: normal;
 }
 
 #cart_wrapper table td a{
-  font-size:.7em;
+  font-size:rem-calc(11);
 }
 
 .folder-cart h1{
@@ -62,7 +63,7 @@
 
 
 .total_area .total{
-  font-size: .905em;
+  font-size:rem-calc(13);
   
 }
 
@@ -92,14 +93,14 @@
 }
 
 .small-description{
-  font-size:.75em;
+  font-size:rem-calc(11);
   font-weight: normal !important;
   font-style: italic;
 }
 
 #checkout_steps{
   border-bottom: 1px solid black;
-  font-size:.7em
+  font-size:rem-calc(12);
 }
 
 #checkout_steps li.active{
@@ -112,13 +113,13 @@
 .previous_address_instruction{
   margin-bottom:5px;
   margin-top:5px;
-  font-size:.8em;
+  font-size:rem-calc(12);
 }
 
 .ship_to_statement{
   margin-bottom:5px;
   margin-top:5px;
-  font-size:.8em;
+  font-size:rem-calc(12);
   font-weight:bold;
   
 }
@@ -127,18 +128,18 @@
   width:100%;
 }
 .previous_addresses td{
-  font-size: .75em;
+  font-size:rem-calc(12);
 }
 
 .cart-box{
   background-color:white;
-  border:#eeeeee;
+  border:2px solid #eeeeee;
   padding:20px;
   margin-top:20px;
 }
 
 .cart-box h2{
-  font-size: 1.3em;
+  font-size:rem-calc(20);
   text-align: center;
 }
 
@@ -157,8 +158,8 @@
 
 .order-info .column, 
 .order-info .columns {
-padding-left: 0.5375em;
-padding-right: 0.5375em;
+padding-left: rem-calc(6);
+padding-right: rem-calc(6);
 }
 
 .address-box{
@@ -171,11 +172,11 @@ padding-right: 0.5375em;
 }
 
 .payment-fine-print{
-  font-size: .8em;
+  font-size: rem-calc(12);
   padding:20px;
 }
 
-@media only screen and (min-width: 64.063em) { /* Large and up */
+@media #{$large} { 
   .cart_unit_price{
     min-width: 100px;
   }
@@ -199,7 +200,7 @@ padding-right: 0.5375em;
   
   
   #checkout_steps{
-    font-size:1em;
+    font-size:rem-calc(14);
   }
 
   
@@ -212,6 +213,21 @@ padding-right: 0.5375em;
   
   .address-box h2{
     text-align: left;
-  font-size:1em;
+  }
+}
+
+
+.address-book{
+  font-size: rem-calc(13);
+  cursor:pointer;
+  border:2px solid #eee;
+  padding:$column-gutter/4;
+  min-height:110px;
+  .description{
+    font-weight:bold;
+  }
+  
+  &.selected{  
+    border:2px solid $primary-color;
   }
 }
