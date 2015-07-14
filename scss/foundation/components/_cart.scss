@@ -1,52 +1,50 @@
-#cart_wrapper table{
-  width:100%;
-  background-color:transparent;
-  border:0px;
-  margin-bottom: 0px;
-  border-bottom: 1px solid black;
-}
-
-
-#cart_wrapper table th{
-  border-bottom: 1px solid black;
-}
-
-#cart_wrapper table td,
-#cart_wrapper table tr.even,
-#cart_wrapper table tr.alt,
-#cart_wrapper table tr:nth-of-type(even){
-  background-color:transparent;
-  vertical-align: top;
-  
-}
-
-#cart_wrapper table tr.even,
-#cart_wrapper table tr.alt,
-#cart_wrapper table tr:nth-of-type(even){
-  background-color:rgba(0,0,0,.01);
-}
-
-#cart_wrapper table td.money{
-  text-align: right;
-}
-
-#cart_wrapper table td select{
-  width:auto;
-  margin-bottom: 5px;
-  padding-right:20px;
-}
-
-
-#cart_wrapper table td.name{
-  font-weight: bold;
-}
-#cart_wrapper table td .description{
-  font-size:rem-calc(13);
-  font-weight: normal;
-}
-
-#cart_wrapper table td a{
-  font-size:rem-calc(11);
+#cart_wrapper {
+  table{
+    width:100%;
+    background-color:transparent;
+    border:0px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid black;
+    
+    th{
+      border-bottom: 1px solid black;
+    }
+    
+    tr td{
+      background-color:transparent;
+      vertical-align: top;
+      
+      select{
+        width:auto;
+        margin-bottom: 5px;
+        padding-right:20px;
+      }
+      
+      .description{
+        font-size:rem-calc(13);
+        font-weight: normal;
+      }
+      
+      a{
+        font-size:rem-calc(11);
+      }
+    }
+    
+    tr.even, tr.alt, tr:nth-of-type(even){
+      td{
+        background-color:rgba(0,0,0,.01);
+      }
+    }
+    
+    td.money{
+      text-align: right;
+    }
+    
+    td.name{
+      font-weight: bold;
+    }
+    
+  }
 }
 
 .folder-cart h1{
@@ -59,20 +57,22 @@
 .total_area{
   background-color:rgba(0,0,0,.05);
   padding:20px;
-}
-
-
-.total_area .total{
-  font-size:rem-calc(13);
   
+  .total{
+    font-size:rem-calc(13);
+  }
+  
+  .button{
+    margin:0;
+  }
+  
+  .row{
+    margin-bottom: 20px !important;
+  }
 }
 
 .row .total_area{
   padding-bottom:1px;
-}
-
-.total_area .row{
-  margin-bottom: 20px !important;
 }
 
 .extra_total_area{
@@ -101,10 +101,10 @@
 #checkout_steps{
   border-bottom: 1px solid black;
   font-size:rem-calc(12);
-}
-
-#checkout_steps li.active{
-  font-weight: bold;
+  
+  li.active{
+    font-weight: bold;
+  }
 }
 
 .number{
@@ -126,9 +126,9 @@
 
 .previous_addresses{
   width:100%;
-}
-.previous_addresses td{
-  font-size:rem-calc(12);
+  td{
+    font-size:rem-calc(12);
+  }
 }
 
 .cart-box{
@@ -136,13 +136,11 @@
   border:2px solid #eeeeee;
   padding:20px;
   margin-top:20px;
+  h2{
+    font-size:rem-calc(20);
+    text-align: center;
+  }
 }
-
-.cart-box h2{
-  font-size:rem-calc(20);
-  text-align: center;
-}
-
 
 .card-info{
   max-width:370px;
@@ -164,11 +162,9 @@ padding-right: rem-calc(6);
 
 .address-box{
   font-size: 13px;
-  
-}
-
-.address-box h2{
-  text-align: left;
+  h2{
+    text-align: left;
+  }
 }
 
 .payment-fine-print{
