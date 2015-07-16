@@ -34,20 +34,21 @@
 
 .password-validation 
 {
-  span{
+  div{
     font-size:12px;
     line-height:16px;
-  }
-  .invalid {
-    background:url(/images/cancel.png) no-repeat 0 0;
+    background:url(/images/lock.png) no-repeat 0 0;
     padding-left:20px;
     line-height:16px;
-    color:#ec3f41;
+    color:grey;
   }
-  .valid {
-      background:url(/images/accept.png) no-repeat 0 0;
-      padding-left:20px;
-      line-height:16px;
-      color:#3a7d34;
+  
+  .valid div{
+    background:url(/images/valid.png) no-repeat 0 0;
+    color:green;
   }
-}  
+  .invalid div{
+    background:url(/images/invalid.png) no-repeat 0 0;
+    color:red;
+  }
+} 
