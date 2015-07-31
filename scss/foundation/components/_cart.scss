@@ -216,7 +216,7 @@ padding-right: rem-calc(6);
 .address-book{
   font-size: rem-calc(13);
   cursor:pointer;
-  border:2px solid #eee;
+  border:2px solid rgba(0,0,0,.1);
   padding:$column-gutter/4;
   min-height:110px;
   .description{
