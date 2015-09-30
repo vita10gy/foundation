@@ -54,5 +54,13 @@ $inline-list-children-display: block !default;
     .inline-list {
       @include inline-list();
     }
+    .inline-list-centered {
+      @include inline-list();
+      text-align: center;
+      > li{
+        display: inline-block;
+        float:none;
+      }
+    }
   }
 }
