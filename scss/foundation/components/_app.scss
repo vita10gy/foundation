@@ -34,21 +34,45 @@
 
 .password-validation 
 {
+	
+	$validation-icon-font-size: rem-calc(18) !important !default;
+	$validation-icon-margin-right: 5px !default;	
+	
   div{
     font-size:12px;
     line-height:16px;
-    background:url(/images/lock.png) no-repeat 0 0;
-    padding-left:20px;
-    line-height:16px;
     color:grey;
+		
+		&:before{
+			@extend .fa;
+			@extend .fa-fw;
+			@extend .fa-lock:before;
+			margin-right:$validation-icon-margin-right;
+			font-size:$validation-icon-font-size;
+			color:#333;
+		}
   }
-  
+	
   .valid div{
-    background:url(/images/valid.png) no-repeat 0 0;
     color:green;
+		&:before{
+			@extend .fa;
+			@extend .fa-fw;
+			@extend .fa-check:before;
+			margin-right:$validation-icon-margin-right;
+			font-size:$validation-icon-font-size;
+			color:green;
+		}
   }
   .invalid div{
-    background:url(/images/invalid.png) no-repeat 0 0;
     color:red;
+		&:before{
+			@extend .fa;
+			@extend .fa-fw;
+			@extend .fa-times:before;
+			margin-right:$validation-icon-margin-right;
+			font-size:$validation-icon-font-size;
+			color:red;
+		}
   }
-} 
+}
