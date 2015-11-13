@@ -95,25 +95,14 @@
 		transition: all 0.5s ease;
 		height:10px;
 		width:0%;
-		&.strength0{
-			width:20%;
-			background-color: rgba(255,0,0,.4) !important;
-		}
-		&.strength1{
-			width:40%;
-			background-color:rgba(#FF7F00,.4) !important;
-		}
-		&.strength2{
-			width:60%;
-			background-color:rgba(#FFDB00,.4) !important;
-		}
-		&.strength3{
-			width:80%;
-			background-color:rgba(#A4D100,.4) !important;
-		}
-		&.strength4{
-			width:100%;
-			background-color:rgba(0,255,0,.4) !important;
+		$color: rgba(255, 0, 0, .6);
+		
+		@for $i from 0 through 4 {
+			&.strength#{$i} {
+				width: 20% * ($i + 1);
+				background-color: $color !important;
+				$color: adjust-color($color, $red: -63.75, $green: 63.75);
+			}
 		}
 	}
 }
