@@ -39,7 +39,7 @@
 	$validation-icon-margin-right: 5px !default;	
 	
   div{
-    font-size:12px;
+    font-size:rem-calc(12);
     line-height:16px;
     color:grey;
 		
@@ -75,4 +75,45 @@
 			color:red;
 		}
   }
+}
+
+#zxcvbn{
+  color:grey;
+	font-size:rem-calc(11);
+	span{
+		font-size:rem-calc(12);
+		font-weight: bold;
+	}
+}
+
+#password_strength_meter{
+	border:1px black solid;
+	border-radius:$global-radius;
+	margin-bottom:$column-gutter/2;
+	
+	div{
+		transition: all 0.5s ease;
+		height:10px;
+		width:0%;
+		&.strength0{
+			width:20%;
+			background-color: rgba(255,0,0,.4) !important;
+		}
+		&.strength1{
+			width:40%;
+			background-color:rgba(#FF7F00,.4) !important;
+		}
+		&.strength2{
+			width:60%;
+			background-color:rgba(#FFDB00,.4) !important;
+		}
+		&.strength3{
+			width:80%;
+			background-color:rgba(#A4D100,.4) !important;
+		}
+		&.strength4{
+			width:100%;
+			background-color:rgba(0,255,0,.4) !important;
+		}
+	}
 }
