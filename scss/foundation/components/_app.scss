@@ -102,6 +102,8 @@
 				width: 20% * ($i + 1);
 				background-color: $color !important;
 				$color: adjust-color($color, $red: -63.75, $green: 63.75);
+				border-top-right-radius:$global-radius;
+				border-bottom-right-radius:$global-radius;
 			}
 		}
 	}
