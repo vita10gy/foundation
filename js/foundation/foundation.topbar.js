@@ -383,7 +383,7 @@
 
         if (!$dropdown.find('.title.back').length) {
 
-          if (settings.mobile_show_parent_link == true && url) {
+          if (settings.mobile_show_parent_link == true && url && url != '#') {
             $titleLi = $('<li class="title back js-generated"><h5><a href="javascript:void(0)"></a></h5></li><li class="parent-link hide-for-top-bar-desktop"><a class="parent-link js-generated" href="' + url + '">' + $link.html() +'</a></li>');
           } else {
             $titleLi = $('<li class="title back js-generated"><h5><a href="javascript:void(0)"></a></h5>');
